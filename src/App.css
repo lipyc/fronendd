@@ -1,0 +1,588 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.header,
+.footer {
+    background-color: #333;
+    color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40; /* Ajuste a cor de fundo conforme necessário */
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  margin-right: auto; /* Empurra o logo para a direita */
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+}
+
+.header-content {
+  text-align: center; /* Centraliza o conteúdo do header */
+  flex-grow: 1; /* Expande para ocupar o espaço restante */
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centraliza os itens da navegação horizontalmente */
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f8f9fa;
+}
+
+
+
+
+
+
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item.active {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+
+.logo {
+  float: left; /* Alinha a imagem do logo à esquerda */
+  padding: 10px; /* Espaçamento em torno do logo */
+}
+
+.logo-image {
+  height: 50px; /* Altura desejada para o logo */
+  width: auto; /* Largura automática para manter a proporção */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* App.css */
+
+/* Estilos para a página inicial (HomePage) */
+.home-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.banner {
+  margin-bottom: 30px;
+}
+
+.banner-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.feature {
+  max-width: 300px;
+  margin: 0 20px;
+  text-align: left;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.cta {
+  background-color: #f0f0f0;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Estilos para a página inicial (HomePage) */
+.home-page {
+  padding-top: 80px; /* Para ajustar ao header fixo */
+}
+
+.intro {
+  padding: 50px 0;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.intro .btn-primary {
+  margin-top: 20px;
+}
+
+.intro-image {
+  width: 100%;
+  height: auto;
+}
+
+.cta {
+  background-color: #f0f0f0;
+  padding: 50px 0;
+}
+
+.cta .cta-image {
+  width: 100%;
+  height: auto;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-content .btn-primary {
+  margin-top: 20px;
+}
+
+
+/* Estilos para a página de Login */
+/* Estilos para a página de Login */
+.container.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-container .form-group {
+  margin-bottom: 20px;
+}
+
+.login-container .form-group label {
+  font-weight: 500;
+  color: #666;
+}
+
+.login-container .form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container .btn-primary {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.login-container .forgot-password-link {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-container .forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Estilos para a página de Redefinição de Senha */
+.reset-password-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.reset-password-box {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reset-password-box h2 {
+  margin-bottom: 20px;
+}
+
+.reset-password-box .form-group {
+  margin-bottom: 15px;
+}
+
+.reset-password-box .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reset-password-box .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.reset-password-box .btn-primary {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.reset-password-box .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para o modal na página de Redefinição de Senha */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.modal-content p {
+  margin-bottom: 10px;
+}
+
+.modal-content .btn-primary {
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Estilos para a página de Signup */
+.signup-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.signup-container .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-container .form-group label {
+  font-weight: 500;
+  color: #666;
+}
+
+.signup-container .form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-container .btn-primary {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-container .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.signup-container .login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signup-container .login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-container .login-link a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Estilos para a página de perfil */
+.profile-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-info {
+  margin-left: 20px;
+}
+
+.profile-info h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.btn-edit {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+  background-color: #0056b3;
+}
+
+.profile-content {
+  margin-top: 20px;
+}
+
+.profile-section {
+  margin-bottom: 20px;
+}
+
+.profile-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.profile-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-section ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.profile-section ul li strong {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.btn-link-white {
+  color: white;
+  text-decoration: none; /* Remove a sublinha do link */
+}
+
+
+
